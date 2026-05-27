@@ -1,2 +1,2 @@
-# ETCT2-
+# ETCT2
 Ethiopian cadets association website
