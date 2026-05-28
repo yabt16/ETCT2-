@@ -437,3 +437,19 @@ footer p{
 .dashboard-card h2{
     color:#0077ff;
 }
+
+  .apply-btn{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#0077ff;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.apply-btn:hover{
+    background:#003366;
+}
+
