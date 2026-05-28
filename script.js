@@ -51,3 +51,14 @@ function(){
 navMenu.classList.toggle("active");
 
 });
+const darkBtn =
+document.getElementById("darkMode");
+
+darkBtn.addEventListener(
+"click",
+function(){
+
+document.body.classList.toggle("dark");
+
+});
+
