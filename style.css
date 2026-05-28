@@ -379,4 +379,61 @@ footer p{
     section h2{
         font-size:30px;
     }
+/* DASHBOARD */
+
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#001933;
+    color:white;
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:40px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:20px 0;
+    transition:0.3s;
+}
+
+.sidebar a:hover{
+    color:#ffb400;
+}
+
+.main-content{
+    flex:1;
+    padding:40px;
+    background:#f4f7fb;
+}
+
+.dashboard-cards{
+    margin-top:40px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.dashboard-card{
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    text-align:center;
+}
+
+.dashboard-card h2{
+    color:#0077ff;
 }
