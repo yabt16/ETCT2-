@@ -16,6 +16,25 @@ window.addEventListener("scroll", function(){
     header.classList.toggle(
         "sticky",
         window.scrollY > 50
+        
+        const verifyForm =
+document.getElementById("verifyForm");
+
+if(verifyForm){
+
+verifyForm.addEventListener(
+"submit",
+function(e){
+
+e.preventDefault();
+
+alert(
+"Certificate VERIFIED successfully!"
+);
+
+});
+
+}
     );
 
 });
