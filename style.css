@@ -453,3 +453,38 @@ footer p{
     background:#003366;
 }
 
+.menu-toggle{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+@media(max-width:900px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:80px;
+        right:0;
+        background:#001933;
+        width:100%;
+        display:none;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    nav a{
+        margin:15px 0;
+    }
+
+}
+
