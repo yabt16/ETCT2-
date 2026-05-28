@@ -7,58 +7,77 @@ document.getElementById("contactForm")
 
 });
 
-/* SIMPLE SCROLL EFFECT */
+/* HEADER SCROLL EFFECT */
 
 window.addEventListener("scroll", function(){
 
     const header = document.querySelector("header");
 
-    header.classList.toggle(
-        "sticky",
-        window.scrollY > 50
-        
-        const verifyForm =
+    if(header){
+
+        header.classList.toggle(
+            "sticky",
+            window.scrollY > 50
+        );
+
+    }
+
+});
+
+/* CERTIFICATE VERIFICATION */
+
+const verifyForm =
 document.getElementById("verifyForm");
 
 if(verifyForm){
 
-verifyForm.addEventListener(
-"submit",
-function(e){
+    verifyForm.addEventListener(
+    "submit",
+    function(e){
 
-e.preventDefault();
+        e.preventDefault();
 
-alert(
-"Certificate VERIFIED successfully!"
-);
+        alert(
+        "Certificate VERIFIED successfully!"
+        );
 
-});
+    });
 
 }
-    );
 
-});
+/* MOBILE MENU */
+
 const menuToggle =
 document.querySelector(".menu-toggle");
 
 const navMenu =
 document.querySelector("nav");
 
-menuToggle.addEventListener(
-"click",
-function(){
+if(menuToggle){
 
-navMenu.classList.toggle("active");
+    menuToggle.addEventListener(
+    "click",
+    function(){
 
-});
+        navMenu.classList.toggle("active");
+
+    });
+
+}
+
+/* DARK MODE */
+
 const darkBtn =
 document.getElementById("darkMode");
 
-darkBtn.addEventListener(
-"click",
-function(){
+if(darkBtn){
 
-document.body.classList.toggle("dark");
+    darkBtn.addEventListener(
+    "click",
+    function(){
 
-});
+        document.body.classList.toggle("dark");
 
+    });
+
+}
